@@ -12,6 +12,7 @@ pojo_classes\reqres\Support.class
 step_definitions\TCR14_UseRequestSpecificationForAuthenticationStep.class
 step_definitions\TCR13_GetListFromResponseStep.class
 step_definitions\TCR10_ValidateAgainstJsonSchemaStep.class
+line_drawers\LineDrawer.class
 pojo_classes\reqres\Root.class
 rest_assured_api_configs\GoRestUserConfig.class
 step_definitions\TCR04_SendingAndValidatingDELETERequestsStep.class

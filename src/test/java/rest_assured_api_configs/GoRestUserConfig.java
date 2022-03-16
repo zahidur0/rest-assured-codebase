@@ -9,8 +9,8 @@ import io.restassured.specification.RequestSpecification;
 import static io.restassured.RestAssured.oauth2;
 
 public class GoRestUserConfig {
-    public static String token = "123";
-    public static String existentId = "3824";
+    public static String token = "1234";
+    public static String existentId = "16771";
     public static RequestSpecification goRestRequestSpec;
 
     @Before

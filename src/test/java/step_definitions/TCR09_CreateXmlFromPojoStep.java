@@ -7,6 +7,7 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import line_drawers.LineDrawer;
 import pojo_classes.GoRest;
 
 public class TCR09_CreateXmlFromPojoStep {
@@ -18,8 +19,10 @@ public class TCR09_CreateXmlFromPojoStep {
     GoRest goRest;
     @Given("I create a pojo")
     public void iCreateAPojo() {
+        LineDrawer.HorizontalLineDrawer();
         goRest = new GoRest();
-
+        System.out.println("GoRest object created");
+        LineDrawer.HorizontalLineDrawer();
     }
 
     @When("I set the pojo fields")
@@ -28,6 +31,8 @@ public class TCR09_CreateXmlFromPojoStep {
         goRest.setGender("male");
         goRest.setName("David");
         goRest.setStatus("inactive");
+        System.out.println("Object values set");
+        LineDrawer.HorizontalLineDrawer();
     }
 
     @Then("I create an XML entry")
@@ -37,6 +42,7 @@ public class TCR09_CreateXmlFromPojoStep {
         // we can change this using .withRootName to anything we wish
         xml = xmlMapper.writer().withRootName("hash").writeValueAsString(goRest);
         System.out.println(xml);
+        LineDrawer.HorizontalLineDrawer();
     }
 
 }

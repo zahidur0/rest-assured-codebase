@@ -4,6 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
+import line_drawers.LineDrawer;
 import rest_assured_api_configs.GoRestUserConfig;
 
 import static io.restassured.RestAssured.given;
@@ -18,6 +19,7 @@ public class TCR05_MeasuringAPIResponseTimeStep {
 
     @Given("I submit a timed post request")
     public void iSubmitATimedPostRequest() {
+        LineDrawer.HorizontalLineDrawer();
         email = "uniquetest1@email.com";
         // JSON that will be posted (correctly formatted)
         String userExampleJson = "{\n" +
@@ -37,6 +39,7 @@ public class TCR05_MeasuringAPIResponseTimeStep {
         // we can return the response as a string
         String jsonResponse = postResponse.asString();
         System.out.println(jsonResponse);
+        LineDrawer.HorizontalLineDrawer();
     }
 
     @Given("I submit a timed get request")
@@ -47,6 +50,8 @@ public class TCR05_MeasuringAPIResponseTimeStep {
                 .when()
                         .get("https://gorest.co.in/public/v2/users");
         getResponse.then().assertThat().statusCode(200);
+        System.out.println("Request successful (status code " + getResponse.getStatusCode() + ")");
+        LineDrawer.HorizontalLineDrawer();
     }
 
     @When("I return the time taken for both requests")
@@ -55,6 +60,7 @@ public class TCR05_MeasuringAPIResponseTimeStep {
         System.out.println("The GET API response time was: " + getResponseTime + " ms");
         postResponseTime = postResponse.getTime();
         System.out.println("The POST API response time was: " + postResponseTime + " ms");
+        LineDrawer.HorizontalLineDrawer();
     }
 
     @Then("I compare the get api response time to the post api response time")
@@ -65,5 +71,6 @@ public class TCR05_MeasuringAPIResponseTimeStep {
         else {
             System.out.println("The GET request response took longer than the POST request response.");
         }
+        LineDrawer.HorizontalLineDrawer();
     }
 }

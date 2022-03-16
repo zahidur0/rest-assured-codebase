@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.response.Response;
+import line_drawers.LineDrawer;
 import org.junit.Assert;
 import rest_assured_api_configs.GoRestUserConfig;
 
@@ -18,6 +19,7 @@ public class TCR11_ValidateAgainstXmlSchemaStep {
 
     @Given("I have a XML response")
     public void iHaveAXMLResponse() {
+        LineDrawer.HorizontalLineDrawer();
         String id = GoRestUserConfig.existentId;
         response = given()
                         .auth().oauth2(GoRestUserConfig.token)
@@ -28,18 +30,24 @@ public class TCR11_ValidateAgainstXmlSchemaStep {
                 .then()
                         .extract().response();
         System.out.println(response.asString());
+        LineDrawer.HorizontalLineDrawer();
     }
 
     @And("I have a XML schema")
     public void iHaveAXMLSchema() {
         // here we check if the JSON schema exists
         Assert.assertTrue(new File("src/main/resources/GoRestXmlSchema.xsd").isFile());
+        System.out.println("Schema exists");
+        LineDrawer.HorizontalLineDrawer();
     }
 
     @Then("I find the XML response agrees with the schema")
     public void iFindTheXMLResponseAgreesWithTheSchema() {
         // check if the response agrees with the format dictated by the XML schema
         response.then().body(matchesXsdInClasspath("GoRestXmlSchema.xsd"));
+        System.out.println("Matching successful");
+        LineDrawer.HorizontalLineDrawer();
+
     }
 
 }

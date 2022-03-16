@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="17" failures="0" name="cucumber_options.TestRunner" time="24.308" errors="0" skipped="0">
+<testsuite tests="17" failures="0" name="cucumber_options.TestRunner" time="20.806" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.2+8-LTS-86"/>
@@ -12,7 +12,7 @@
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="user.script" value=""/>
-    <property name="user.country" value="GB"/>
+    <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="C:\Users\Mohammed.Rahman\Documents\Java Automation Group Work"/>
@@ -27,7 +27,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\Users\Mohammed.Rahman\Documents\apache-maven-3.8.4\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Mohammed.Rahman\Documents\apache-maven-3.8.4\bin;C:\Users\Mohammed.Rahman\AppData\Local\Microsoft\WindowsApps;C:\Users\Mohammed.Rahman\AppData\Local\Programs\Git\cmd;C:\Users\Mohammed.Rahman\AppData\Local\Programs\Fiddler;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Mohammed.Rahman\Documents\apache-maven-3.8.4\bin;C:\Users\Mohammed.Rahman\Documents\allure-2.17.3\bin;C:\Users\Mohammed.Rahman\AppData\Local\Microsoft\WindowsApps;C:\Users\Mohammed.Rahman\AppData\Local\Programs\Git\cmd;C:\Users\Mohammed.Rahman\AppData\Local\Programs\Fiddler;."/>
     <property name="maven.conf" value="C:\Users\Mohammed.Rahman\Documents\apache-maven-3.8.4/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="61.0"/>
@@ -61,21 +61,21 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="A user is able to send a get request to an API and validate the response" name="A user gets a single object back in a response" time="1.873"/>
-  <testcase classname="A user is able to send a get request to an API and validate the response" name="A user gets multiple objects from the request" time="0.184"/>
-  <testcase classname="A user is able to send a post request and validate the response" name="A user successfully posts an entry" time="1.26"/>
-  <testcase classname="A user is able to send a put request and validate the response" name="A user successfully updates an entry" time="2.445"/>
-  <testcase classname="A user is able to send a delete request and validate the response" name="A user successfully deletes an entry" time="2.39"/>
-  <testcase classname="Measure the response time of API requests" name="I compare the time taken for a GET and POST request response" time="2.715"/>
-  <testcase classname="Serialise JSON as a POJO" name="Successfully serialise JSON as a POJO" time="1.547"/>
-  <testcase classname="Serialise JSON as a POJO" name="Successfully serialise nested JSON as a POJO" time="0.19"/>
-  <testcase classname="Serialise XML as a POJO" name="Successfully serialise XML as a POJO" time="1.408"/>
-  <testcase classname="Create JSON from a POJO" name="Successfully create JSON from a POJO" time="0.045"/>
-  <testcase classname="Create XML from a POJO" name="Successfully create XML from a POJO" time="0.062"/>
-  <testcase classname="Check response against JSON schema" name="Successfully verify response against JSON schema" time="2.029"/>
-  <testcase classname="Check response against XML schema" name="Successfully verify response against XML schema" time="1.574"/>
-  <testcase classname="Getting headers from a response" name="Successfully get all headers from a response" time="2.127"/>
-  <testcase classname="Getting headers from a response" name="Successfully get one header from a response" time="1.155"/>
-  <testcase classname="Return a List from a GET response" name="Successfully return a List from a GET response" time="2.064"/>
-  <testcase classname="Use a RequestSpecification to pass authorisation check" name="Successfully use a RequestSpecification object to pass authorisation check" time="1.24"/>
+  <testcase classname="A user is able to send a get request to an API and validate the response" name="A user gets a single object back in a response" time="2.021"/>
+  <testcase classname="A user is able to send a get request to an API and validate the response" name="A user gets multiple objects from the request" time="0.309"/>
+  <testcase classname="A user is able to send a post request and validate the response" name="A user successfully posts an entry" time="1.227"/>
+  <testcase classname="A user is able to send a put request and validate the response" name="A user successfully updates an entry" time="2.388"/>
+  <testcase classname="A user is able to send a delete request and validate the response" name="A user successfully deletes an entry" time="2.295"/>
+  <testcase classname="Measure the response time of API requests" name="I compare the time taken for a GET and POST request response" time="2.341"/>
+  <testcase classname="Serialise JSON as a POJO" name="Successfully serialise JSON as a POJO" time="1.385"/>
+  <testcase classname="Serialise JSON as a POJO" name="Successfully serialise nested JSON as a POJO" time="0.239"/>
+  <testcase classname="Serialise XML as a POJO" name="Successfully serialise XML as a POJO" time="1.281"/>
+  <testcase classname="Create JSON from a POJO" name="Successfully create JSON from a POJO" time="0.044"/>
+  <testcase classname="Create XML from a POJO" name="Successfully create XML from a POJO" time="0.066"/>
+  <testcase classname="Check response against JSON schema" name="Successfully verify response against JSON schema" time="1.275"/>
+  <testcase classname="Check response against XML schema" name="Successfully verify response against XML schema" time="1.245"/>
+  <testcase classname="Getting headers from a response" name="Successfully get all headers from a response" time="1.116"/>
+  <testcase classname="Getting headers from a response" name="Successfully get one header from a response" time="1.184"/>
+  <testcase classname="Return a List from a GET response" name="Successfully return a List from a GET response" time="1.219"/>
+  <testcase classname="Use a RequestSpecification to pass authorisation check" name="Successfully use a RequestSpecification object to pass authorisation check" time="1.171"/>
 </testsuite>

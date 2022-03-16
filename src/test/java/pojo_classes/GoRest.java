@@ -20,24 +20,50 @@ public class GoRest {
 
     }
 
-    public int getID() { return id; }
-    public void setID(int value) { this.id = value; }
+    public int getID() {
+        return id;
+    }
 
-    public String getName() { return name; }
-    public void setName(String value) { this.name = value; }
+    public void setID(int value) {
+        this.id = value;
+    }
 
-    public String getEmail() { return email; }
-    public void setEmail(String value) { this.email = value; }
+    public String getName() {
+        return name;
+    }
 
-    public String getGender() { return gender; }
-    public void setGender(String value) { this.gender = value; }
+    public void setName(String value) {
+        this.name = value;
+    }
 
-    public String getStatus() { return status; }
-    public void setStatus(String value) { this.status = value; }
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String value) {
+        this.email = value;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String value) {
+        this.gender = value;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String value) {
+        this.status = value;
+    }
 
     @Override
-    public String toString()
-    {
-        return "ClassPOJO [id = "+ id +", name = "+ name+", email = "+ email +", gender = "+ gender + ", status = "+ status +"]";
+    public String toString() {
+        return "ClassPOJO [id = " + id + ", name = " +
+                name + ", email = " + email +
+                ", gender = " + gender + ", status = " + status + "]";
     }
 }
